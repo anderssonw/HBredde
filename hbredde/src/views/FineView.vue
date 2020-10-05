@@ -1,16 +1,16 @@
 <template>
     <v-container>
-        <BoterForm />
+        <FineForm v-bind:isOpen="true" />
     </v-container>
 </template>
 
 <script>
 // @ is an alias to /src
-import BoterForm from '../components/BoterForm'
+import FineForm from '../components/FineForm'
 export default {
-    name: 'Boter',
+    name: 'FineView',
     components: {
-        BoterForm: BoterForm,
+        FineForm: FineForm,
     },
 
     data: () => ({

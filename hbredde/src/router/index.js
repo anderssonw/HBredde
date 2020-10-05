@@ -10,14 +10,25 @@ const routes = [
         component: Base,
         children: [
             {
-                path: '/boter',
-                name: 'Boter',
+                path: '/fines',
+                name: 'FineView',
                 // route level code-splitting
                 // this generates a separate chunk (about.[hash].js) for this route
                 // which is lazy-loaded when the route is visited.
                 component: () =>
                     import(
-                        /* webpackChunkName: "about" */ '../views/Boter.vue'
+                        /* webpackChunkName: "about" */ '../views/FineView.vue'
+                    ),
+            },
+            {
+                path: '/users',
+                name: 'UsersView',
+                // route level code-splitting
+                // this generates a separate chunk (about.[hash].js) for this route
+                // which is lazy-loaded when the route is visited.
+                component: () =>
+                    import(
+                        /* webpackChunkName: "about" */ '../views/UsersView.vue'
                     ),
             },
         ],
